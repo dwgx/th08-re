@@ -119,11 +119,11 @@ undefined4 FUN_00404890(void)
       if ((((_DAT_0164d528 & 0x10) != 0) && ((_DAT_0164d528 & 0x10) != (_DAT_0164d530 & 0x10))) ||
          (((_DAT_0164d528 & 0x20) != 0 && ((_DAT_0164d528 & 0x20) != (_DAT_0164d530 & 0x20))))) {
         *in_ECX = 1;
-        th08::SoundPlayer::FUN_0045d550(&th08::g_SoundPlayer,0,0);
+        th08::SoundPlayer::PlaySoundByIdx(&th08::g_SoundPlayer,0,0);
       }
       if (((_DAT_0164d528 & 0x1001) != 0) && ((_DAT_0164d528 & 0x1001) != (_DAT_0164d530 & 0x1001)))
       {
-        th08::SoundPlayer::FUN_0045d550(&th08::g_SoundPlayer,10,0);
+        th08::SoundPlayer::PlaySoundByIdx(&th08::g_SoundPlayer,10,0);
         for (local_8 = 0; local_8 < 4; local_8 = local_8 + 1) {
           *(undefined2 *)((int)in_ECX + local_8 * 0x2a4 + 0x206) = 2;
         }
@@ -148,11 +148,11 @@ switchD_00404931_caseD_1:
       if ((((_DAT_0164d528 & 0x10) != 0) && ((_DAT_0164d528 & 0x10) != (_DAT_0164d530 & 0x10))) ||
          (((_DAT_0164d528 & 0x20) != 0 && ((_DAT_0164d528 & 0x20) != (_DAT_0164d530 & 0x20))))) {
         *in_ECX = 2;
-        th08::SoundPlayer::FUN_0045d550(&th08::g_SoundPlayer,0,0);
+        th08::SoundPlayer::PlaySoundByIdx(&th08::g_SoundPlayer,0,0);
       }
       if (((_DAT_0164d528 & 0x1001) != 0) && ((_DAT_0164d528 & 0x1001) != (_DAT_0164d530 & 0x1001)))
       {
-        th08::SoundPlayer::FUN_0045d550(&th08::g_SoundPlayer,10,0);
+        th08::SoundPlayer::PlaySoundByIdx(&th08::g_SoundPlayer,10,0);
         uVar2 = th08::GameManager::GetFlag14(&th08::g_GameManager);
         if ((uVar2 != 0) || (3 < th08::g_GameManager.difficulty)) {
           uVar2 = th08::GameManager::GetFlag14(&th08::g_GameManager);

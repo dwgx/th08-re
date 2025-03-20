@@ -26,7 +26,7 @@ undefined4 FUN_004037b0(void)
   
   if ((((_DAT_0164d528 & 8) != 0) && ((_DAT_0164d528 & 8) != (_DAT_0164d530 & 8))) && (*in_ECX != 4)
      ) {
-    th08::SoundPlayer::FUN_0045d550(&th08::g_SoundPlayer,10,0);
+    th08::SoundPlayer::PlaySoundByIdx(&th08::g_SoundPlayer,10,0);
     *in_ECX = 4;
     for (local_8 = 0; local_8 < 10; local_8 = local_8 + 1) {
       iVar1 = FUN_004066e0();
@@ -39,7 +39,7 @@ undefined4 FUN_004037b0(void)
   }
   if ((((_DAT_0164d528 & 0x200) != 0) && ((_DAT_0164d528 & 0x200) != (_DAT_0164d530 & 0x200))) &&
      (*in_ECX != 9)) {
-    th08::SoundPlayer::FUN_0045d550(&th08::g_SoundPlayer,10,0);
+    th08::SoundPlayer::PlaySoundByIdx(&th08::g_SoundPlayer,10,0);
     *in_ECX = 9;
     for (local_8 = 0; local_8 < 10; local_8 = local_8 + 1) {
       iVar1 = FUN_004066e0();
@@ -52,7 +52,7 @@ undefined4 FUN_004037b0(void)
   uVar2 = th08::GameManager::GetFlag3(&th08::g_GameManager);
   if (((uVar2 == 0) && ((_DAT_0164d528 & 0x4000) != 0)) &&
      (((_DAT_0164d528 & 0x4000) != (_DAT_0164d530 & 0x4000) && (*in_ECX != 9)))) {
-    th08::SoundPlayer::FUN_0045d550(&th08::g_SoundPlayer,10,0);
+    th08::SoundPlayer::PlaySoundByIdx(&th08::g_SoundPlayer,10,0);
     *in_ECX = 10;
     for (local_8 = 0; local_8 < 10; local_8 = local_8 + 1) {
       iVar1 = FUN_004066e0();
@@ -128,21 +128,21 @@ undefined4 FUN_004037b0(void)
       if (uVar2 == 0) {
         if (((_DAT_0164d528 & 0x10) != 0) && ((_DAT_0164d528 & 0x10) != (_DAT_0164d530 & 0x10))) {
           *in_ECX = 3;
-          th08::SoundPlayer::FUN_0045d550(&th08::g_SoundPlayer,0,0);
+          th08::SoundPlayer::PlaySoundByIdx(&th08::g_SoundPlayer,0,0);
         }
       }
       else if (((_DAT_0164d528 & 0x10) != 0) && ((_DAT_0164d528 & 0x10) != (_DAT_0164d530 & 0x10)))
       {
         *in_ECX = 2;
-        th08::SoundPlayer::FUN_0045d550(&th08::g_SoundPlayer,0,0);
+        th08::SoundPlayer::PlaySoundByIdx(&th08::g_SoundPlayer,0,0);
       }
       if (((_DAT_0164d528 & 0x20) != 0) && ((_DAT_0164d528 & 0x20) != (_DAT_0164d530 & 0x20))) {
         *in_ECX = 2;
-        th08::SoundPlayer::FUN_0045d550(&th08::g_SoundPlayer,0,0);
+        th08::SoundPlayer::PlaySoundByIdx(&th08::g_SoundPlayer,0,0);
       }
       if (((_DAT_0164d528 & 0x1001) != 0) && ((_DAT_0164d528 & 0x1001) != (_DAT_0164d530 & 0x1001)))
       {
-        th08::SoundPlayer::FUN_0045d550(&th08::g_SoundPlayer,10,0);
+        th08::SoundPlayer::PlaySoundByIdx(&th08::g_SoundPlayer,10,0);
         for (local_8 = 0; (int)local_8 < 4; local_8 = local_8 + 1) {
           *(undefined2 *)((int)in_ECX + local_8 * 0x2a4 + 0x206) = 2;
         }
@@ -170,23 +170,23 @@ undefined4 FUN_004037b0(void)
     if (3 < in_ECX[1]) {
       if (((_DAT_0164d528 & 0x10) != 0) && ((_DAT_0164d528 & 0x10) != (_DAT_0164d530 & 0x10))) {
         *in_ECX = 1;
-        th08::SoundPlayer::FUN_0045d550(&th08::g_SoundPlayer,0,0);
+        th08::SoundPlayer::PlaySoundByIdx(&th08::g_SoundPlayer,0,0);
       }
       uVar2 = th08::GameManager::GetFlag3(&th08::g_GameManager);
       if (uVar2 == 0) {
         if (((_DAT_0164d528 & 0x20) != 0) && ((_DAT_0164d528 & 0x20) != (_DAT_0164d530 & 0x20))) {
           *in_ECX = 3;
-          th08::SoundPlayer::FUN_0045d550(&th08::g_SoundPlayer,0,0);
+          th08::SoundPlayer::PlaySoundByIdx(&th08::g_SoundPlayer,0,0);
         }
       }
       else if (((_DAT_0164d528 & 0x20) != 0) && ((_DAT_0164d528 & 0x20) != (_DAT_0164d530 & 0x20)))
       {
         *in_ECX = 1;
-        th08::SoundPlayer::FUN_0045d550(&th08::g_SoundPlayer,0,0);
+        th08::SoundPlayer::PlaySoundByIdx(&th08::g_SoundPlayer,0,0);
       }
       if (((_DAT_0164d528 & 0x1001) != 0) && ((_DAT_0164d528 & 0x1001) != (_DAT_0164d530 & 0x1001)))
       {
-        th08::SoundPlayer::FUN_0045d550(&th08::g_SoundPlayer,10,0);
+        th08::SoundPlayer::PlaySoundByIdx(&th08::g_SoundPlayer,10,0);
         for (local_8 = 0; (int)local_8 < 4; local_8 = local_8 + 1) {
           *(undefined2 *)((int)in_ECX + local_8 * 0x2a4 + 0x206) = 2;
         }
@@ -216,15 +216,15 @@ undefined4 FUN_004037b0(void)
     if (3 < in_ECX[1]) {
       if (((_DAT_0164d528 & 0x10) != 0) && ((_DAT_0164d528 & 0x10) != (_DAT_0164d530 & 0x10))) {
         *in_ECX = 2;
-        th08::SoundPlayer::FUN_0045d550(&th08::g_SoundPlayer,0,0);
+        th08::SoundPlayer::PlaySoundByIdx(&th08::g_SoundPlayer,0,0);
       }
       if (((_DAT_0164d528 & 0x20) != 0) && ((_DAT_0164d528 & 0x20) != (_DAT_0164d530 & 0x20))) {
         *in_ECX = 1;
-        th08::SoundPlayer::FUN_0045d550(&th08::g_SoundPlayer,0,0);
+        th08::SoundPlayer::PlaySoundByIdx(&th08::g_SoundPlayer,0,0);
       }
       if (((_DAT_0164d528 & 0x1001) != 0) && ((_DAT_0164d528 & 0x1001) != (_DAT_0164d530 & 0x1001)))
       {
-        th08::SoundPlayer::FUN_0045d550(&th08::g_SoundPlayer,10,0);
+        th08::SoundPlayer::PlaySoundByIdx(&th08::g_SoundPlayer,10,0);
         for (local_8 = 0; (int)local_8 < 4; local_8 = local_8 + 1) {
           *(undefined2 *)((int)in_ECX + local_8 * 0x2a4 + 0x206) = 2;
         }
@@ -268,11 +268,11 @@ undefined4 FUN_004037b0(void)
         else {
           *in_ECX = 8;
         }
-        th08::SoundPlayer::FUN_0045d550(&th08::g_SoundPlayer,0,0);
+        th08::SoundPlayer::PlaySoundByIdx(&th08::g_SoundPlayer,0,0);
       }
       if (((_DAT_0164d528 & 0x1001) != 0) && ((_DAT_0164d528 & 0x1001) != (_DAT_0164d530 & 0x1001)))
       {
-        th08::SoundPlayer::FUN_0045d550(&th08::g_SoundPlayer,10,0);
+        th08::SoundPlayer::PlaySoundByIdx(&th08::g_SoundPlayer,10,0);
         for (local_8 = 4; (int)local_8 < 7; local_8 = local_8 + 1) {
           *(undefined2 *)((int)in_ECX + local_8 * 0x2a4 + 0x206) = 2;
         }
@@ -307,11 +307,11 @@ undefined4 FUN_004037b0(void)
         else {
           *in_ECX = 7;
         }
-        th08::SoundPlayer::FUN_0045d550(&th08::g_SoundPlayer,0,0);
+        th08::SoundPlayer::PlaySoundByIdx(&th08::g_SoundPlayer,0,0);
       }
       if (((_DAT_0164d528 & 0x1001) != 0) && ((_DAT_0164d528 & 0x1001) != (_DAT_0164d530 & 0x1001)))
       {
-        th08::SoundPlayer::FUN_0045d550(&th08::g_SoundPlayer,10,0);
+        th08::SoundPlayer::PlaySoundByIdx(&th08::g_SoundPlayer,10,0);
         for (local_8 = 0; (int)local_8 < 4; local_8 = local_8 + 1) {
           *(undefined2 *)((int)in_ECX + local_8 * 0x2a4 + 0x206) = 1;
         }

@@ -54,7 +54,7 @@ void FUN_0040c010(void)
       *(undefined *)(local_10[0x5ba] + 0x3d) = 1;
       local_10 = local_10 + 0x5bc;
     }
-    th08::SoundPlayer::FUN_0045d550(&th08::g_SoundPlayer,0xd,0);
+    th08::SoundPlayer::PlaySoundByIdx(&th08::g_SoundPlayer,0xd,0);
   }
   bVar1 = th08::ZunTimer::operator<((ZunTimer *)(local_c + 0x18),0x28);
   if (CONCAT31(extraout_var,bVar1) == 0) {
@@ -126,7 +126,8 @@ void FUN_0040c010(void)
             *local_10 = 2;
             *(undefined2 *)((int)local_10 + 0x3b6) = 1;
             D3DXVECTOR3::operator/((D3DXVECTOR3 *)(local_10 + 0x68),&local_54,8.0);
-            th08::SoundPlayer::FUN_0045d660(&th08::g_SoundPlayer,0xf,(float)local_10[5]);
+            th08::SoundPlayer::PlaySoundPositionedByIdx(&th08::g_SoundPlayer,0xf,(float)local_10[5])
+            ;
             FUN_0045b8b0(8,0,0,0x15);
           }
         }
